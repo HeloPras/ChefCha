@@ -56,11 +56,16 @@ const components = [
 export default function NavigationMenuDemo() {
   return (
     <>
-      <div className="flex justify-between mx-7 my-2  place-items-center ">
-        <NavigationMenu viewport={false} >
-          <NavigationMenuList>
+      <div className="flex justify-around  my-2  place-items-center ">
+        <div className="h-10 w-auto  ">
+          <img src="/globe.svg" alt="" className=" h-full w-full object-cover"  />
+        </div>
+
+        <NavigationMenu viewport={false}  >
+
+          <NavigationMenuList className="ml-auto" >
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Home</NavigationMenuTrigger>
+              <NavigationMenuTrigger>Menu</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                   <li className="row-span-3">
@@ -95,7 +100,7 @@ export default function NavigationMenuDemo() {
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Components</NavigationMenuTrigger>
+              <NavigationMenuTrigger>Service</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-[400px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                   {components.map((component) => (
@@ -115,86 +120,8 @@ export default function NavigationMenuDemo() {
                 asChild
                 className={navigationMenuTriggerStyle()}
               >
-                <Link href="/docs">Docs</Link>
+                <Link href="/docs">Reservation</Link>
               </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger>List</NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <ul className="grid w-[300px] gap-4">
-                  <li>
-                    <NavigationMenuLink asChild>
-                      <Link href="#">
-                        <div className="font-medium">Components</div>
-                        <div className="text-muted-foreground">
-                          Browse all components in the library.
-                        </div>
-                      </Link>
-                    </NavigationMenuLink>
-                    <NavigationMenuLink asChild>
-                      <Link href="#">
-                        <div className="font-medium">Documentation</div>
-                        <div className="text-muted-foreground">
-                          Learn how to use the library.
-                        </div>
-                      </Link>
-                    </NavigationMenuLink>
-                    <NavigationMenuLink asChild>
-                      <Link href="#">
-                        <div className="font-medium">Blog</div>
-                        <div className="text-muted-foreground">
-                          Read our latest blog posts.
-                        </div>
-                      </Link>
-                    </NavigationMenuLink>
-                  </li>
-                </ul>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger>Simple</NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <ul className="grid w-[200px] gap-4">
-                  <li>
-                    <NavigationMenuLink asChild>
-                      <Link href="#">Components</Link>
-                    </NavigationMenuLink>
-                    <NavigationMenuLink asChild>
-                      <Link href="#">Documentation</Link>
-                    </NavigationMenuLink>
-                    <NavigationMenuLink asChild>
-                      <Link href="#">Blocks</Link>
-                    </NavigationMenuLink>
-                  </li>
-                </ul>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger>With Icon</NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <ul className="grid w-[200px] gap-4">
-                  <li>
-                    <NavigationMenuLink asChild>
-                      <Link href="#" className="flex-row items-center gap-2">
-                        <CircleHelpIcon />
-                        Backlog
-                      </Link>
-                    </NavigationMenuLink>
-                    <NavigationMenuLink asChild>
-                      <Link href="#" className="flex-row items-center gap-2">
-                        <CircleIcon />
-                        To Do
-                      </Link>
-                    </NavigationMenuLink>
-                    <NavigationMenuLink asChild>
-                      <Link href="#" className="flex-row items-center gap-2">
-                        <CircleCheckIcon />
-                        Done
-                      </Link>
-                    </NavigationMenuLink>
-                  </li>
-                </ul>
-              </NavigationMenuContent>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
