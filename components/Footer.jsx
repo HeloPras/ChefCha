@@ -11,9 +11,9 @@ import {
 const Footer = () => {
   return (
     <div className='w-full bg-gray-200 h-[25em] mt-10 border border-gray-300 flex'>
-        <div className='max-w-[px] flex items-center justify-between mt-10 '>
-            <div className=' h-[25em] w-[30em] mx-28 flex flex-col  items-center object-cover'>
-                {/* <img src= className='w-50 object-cover' alt="" /> */}
+        <div className='max-w-[px] flex items-center justify-between mt-10  mx-5'>
+            <div className=' h-[25em] w-[30em] mx-28 flex flex-col  items-center object-cover gap-7'>
+                <img src= '/Logo.png' className='w-50 object-cover mt-5' alt="" />
                 <button className='bg-white px-20 border border-[#fc8019] hover:text-white hover:bg-[#fc8019]  hover:border-b-amber-600 duration-600 ease-in-out  cursor-pointer py-2 font-bold mt-[-20px]'> News Letter</button>
 
                 <p className='my-5'>Follow us</p>
