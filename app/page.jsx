@@ -1,9 +1,7 @@
 import Image from "next/image"
 import Card from "@/components/card"
-import { ArrowRightCircle } from "@deemlol/next-icons";
-import { ArrowLeftCircle } from "@deemlol/next-icons";
-
-
+import { ArrowRightCircle } from "@deemlol/next-icons"
+import { ArrowLeftCircle } from "@deemlol/next-icons"
 
 export default function Home() {
   return (
@@ -119,15 +117,15 @@ export default function Home() {
             <div className="flex flex-col ml-25 gap-2">
               <h1 className="font-bold text-xl">Customer Feedback</h1>
               <div className="flex gap-2">
-              <div className="h-7 w-auto  ">
-              <img
-                src="/star.png"
-                alt="star"
-                className="w-full h-full object-contain "
-              />
-            </div>
-            <p className="font-semibold">4.9</p>
-            <p className="text-gray-500">(15.reviews)</p>
+                <div className="h-7 w-auto  ">
+                  <img
+                    src="/star.png"
+                    alt="star"
+                    className="w-full h-full object-contain "
+                  />
+                </div>
+                <p className="font-semibold">4.9</p>
+                <p className="text-gray-500">(15.reviews)</p>
               </div>
             </div>
           </div>
