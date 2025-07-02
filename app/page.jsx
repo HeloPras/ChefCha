@@ -1,7 +1,10 @@
 import Image from "next/image"
 import Card from "@/components/card"
-import { ArrowRightCircle } from "@deemlol/next-icons"
-import { ArrowLeftCircle } from "@deemlol/next-icons"
+import { ArrowRightCircle } from "@deemlol/next-icons";
+import { ArrowLeftCircle } from "@deemlol/next-icons";
+import ChefFeatures from "@/components/ChefFeatures";
+
+
 
 export default function Home() {
   return (
@@ -33,6 +36,7 @@ export default function Home() {
       </div>
 
       <Card />
+      <ChefFeatures />
 
       <div className="grid grid-cols-[1fr_1fr] mt-30  ">
         <div className="h-150 w-auto overflow-hidden rounded ">
@@ -80,6 +84,7 @@ export default function Home() {
               />
             </div>
           </div>
+          
           <h1 className="text-[#FEAA01] font-bold underline ">TESTIMONIAL</h1>
           <h1 className="text-5xl font-bold max-w-2xl">
             {" "}
