@@ -69,7 +69,7 @@ export default function NavigationMenuDemo() {
 
         <NavigationMenu viewport={false}>
           <NavigationMenuList className="ml-auto">
-            <Link href="/menuh">
+            <Link href="/menu">
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Menu</NavigationMenuTrigger>
                 <NavigationMenuContent>
