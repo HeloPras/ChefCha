@@ -29,7 +29,7 @@ const Footer = () => {
          <div className=' h-[25em] w-full flex mx-auto gap-20 '>
                  <ul className='mt-20 w-full'>
                     <h1 className='font-bold text-xl mb-2'>Useful links</h1>
-                    <li className='py-2 text-sm font-medium hover:border-b-[3px] cursor-pointer border-b-amber-600 duration-200 ease-in-out'>About us</li>
+                    <li className='py-2 text-sm font-medium border-b-[3px] border-transparent hover:border-b-[3px] cursor-pointer border-b-amber-600 duration-200 ease-in-out'>About us</li>
                     <li className='py-2 text-sm font-medium hover:border-b-[3px] cursor-pointer border-b-amber-600 transition-all duration-200 ease-in-out' >Events</li>
                     <li className='py-2 text-sm font-medium hover:border-b-[3px] cursor-pointer border-b-amber-600 transition-all duration-200 ease-in-out'>Blogs</li>
                     <li className='py-2 text-sm font-medium hover:border-b-[3px] cursor-pointer border-b-amber-600 transition-all duration-200 ease-in-out'>FAQ</li>
